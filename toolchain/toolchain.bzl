@@ -79,4 +79,5 @@ def arm_none_eabi_toolchain(name, target_compatible_with = [], copts = [], linko
 
 def register_arm_none_eabi_toolchain(name):
     for host in hosts:
+        # print("debug: registering toolchain for name: () and host: {}".format(name, host))
         native.register_toolchains("{}_{}".format(name, host))

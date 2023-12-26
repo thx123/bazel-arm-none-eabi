@@ -44,6 +44,7 @@ def arm_none_eabi_deps(version = "9.2.1", archives = GCC):
         archives: A dictionary of version to archive attributes.
     """
     for attrs in archives[version]:
+        # print("debug http_archive for {}".format(attrs["name"]))
         http_archive(**attrs)
 
 def register_default_arm_none_eabi_toolchains():
