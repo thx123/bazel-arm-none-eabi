@@ -1,6 +1,6 @@
 # BUILD
 
-load("//toolchain:toolchain.bzl", "hosts")
+load("@arm_none_eabi//toolchain:toolchain.bzl", "hosts")
 
 package(default_visibility = ["//visibility:public"])
 
