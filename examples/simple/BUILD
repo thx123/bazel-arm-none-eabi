@@ -35,7 +35,7 @@ cc_binary(
 platform_transition_filegroup(
     name = "elf",
     srcs = [":arm_elf"],
-    target_platform = "//platforms:arm_none_eabi",
+    target_platform = "@arm_none_eabi//platforms:arm_none_eabi",
 )
 
 genrule(

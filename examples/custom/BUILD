@@ -17,11 +17,11 @@ cc_binary(
 platform_transition_filegroup(
     name = "cortex_m3_elf",
     srcs = [":binary"],
-    target_platform = "//examples/custom/platform:cortex_m3",
+    target_platform = "@arm_none_eabi//examples/custom/platform:cortex_m3",
 )
 
 platform_transition_filegroup(
     name = "cortex_m4_elf",
     srcs = [":binary"],
-    target_platform = "//examples/custom/platform:cortex_m4",
+    target_platform = "@arm_none_eabi//examples/custom/platform:cortex_m4",
 )
