@@ -17,7 +17,7 @@ use_repo(
 # DEV ONLY (not needed for release)
 bazel_dep(name = "aspect_bazel_lib", version = "2.0.0", dev_dependency = True)
 bazel_dep(name = "bazel_skylib", version = "1.5.0", dev_dependency = True)
-# This is needed by arm_none_eabi_extensions, if called outside this repo.
+# This is needed by arm_none_eabi_extension, if called outside this repo.
 bazel_dep(name = "platforms", version = "0.0.8", dev_dependency = False)
 
 register_toolchains(
